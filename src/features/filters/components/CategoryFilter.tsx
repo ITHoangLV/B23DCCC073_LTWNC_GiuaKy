@@ -25,9 +25,8 @@ export function CategoryFilter(): ReactElement {
       aria-label="Lọc theo thể loại sách"
       style={{
         display: 'flex',
-        flexWrap: 'wrap',
-        gap: '0.5rem',
-        alignItems: 'center',
+        flexDirection: 'column',
+        gap: '0.45rem',
       }}
     >
       {CATEGORIES.map((category) => {
@@ -40,27 +39,31 @@ export function CategoryFilter(): ReactElement {
             data-testid={`category-btn-${category}`}
             onClick={() => setCategory(category)}
             style={{
-              padding: '0.45rem 1rem',
-              borderRadius: '999px',
+              width: '100%',
+              padding: '0.6rem 0.9rem',
+              borderRadius: '10px',
               border: '1px solid',
               borderColor: isSelected ? 'transparent' : 'var(--border-color)',
               background: isSelected
                 ? 'var(--accent-color)'
-                : 'var(--bg-card)',
+                : 'var(--bg-secondary)',
               color: isSelected ? 'var(--bg-primary)' : 'var(--text-primary)',
               fontWeight: isSelected ? 700 : 500,
-              fontSize: '0.85rem',
+              fontSize: '0.875rem',
               cursor: 'pointer',
               transition: 'all 0.2s ease',
-              display: 'inline-flex',
+              display: 'flex',
               alignItems: 'center',
-              gap: '0.35rem',
+              justifyContent: 'space-between',
               boxShadow: isSelected ? 'var(--shadow-accent)' : 'var(--shadow-xs)',
               fontFamily: 'var(--font-family)',
             }}
           >
-            <span aria-hidden="true">{CATEGORY_EMOJI[category]}</span>
-            <span>{category}</span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.55rem' }}>
+              <span aria-hidden="true" style={{ fontSize: '1rem' }}>{CATEGORY_EMOJI[category]}</span>
+              <span>{category}</span>
+            </span>
+            {isSelected && <span aria-hidden="true" style={{ fontSize: '0.85rem' }}>✓</span>}
           </button>
         );
       })}

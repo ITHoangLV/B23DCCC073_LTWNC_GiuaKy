@@ -31,7 +31,7 @@ export function SearchBar(): ReactElement {
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%', maxWidth: '500px' }}>
+    <div style={{ position: 'relative', width: '100%', maxWidth: '100%' }}>
       <span
         style={{
           position: 'absolute',

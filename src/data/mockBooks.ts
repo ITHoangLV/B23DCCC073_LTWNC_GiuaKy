@@ -26,7 +26,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'CNTT',
     year: 2021,
     available: 0,
-    coverImage: 'https://images.unsplash.com/photo-1516116211227-bbc04f1a6ea6?w=500&auto=format&fit=crop&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-4',
@@ -44,7 +44,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'CNTT',
     year: 2022,
     available: 3,
-    coverImage: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?w=500&auto=format&fit=crop&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-6',

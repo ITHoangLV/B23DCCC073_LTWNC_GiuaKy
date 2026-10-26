@@ -84,7 +84,7 @@ export function BorrowedList(): ReactElement {
             fontStyle: 'italic',
           }}
         >
-          Bạn chưa mượn cuốn sách nào. Hãy duyệt danh sách bên dưới và chọn "Mượn sách" nhé!
+          Hãy bắt đầu mượn sách!
         </p>
       ) : (
         <div

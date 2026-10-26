@@ -71,18 +71,8 @@ export function MainLibraryView(): ReactElement {
   return (
     <div className="library-layout">
       <div className="library-main">
-        <section
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            gap: '1rem',
-            marginBottom: '1.25rem',
-          }}
-        >
+        <section style={{ marginBottom: '1.25rem' }}>
           <SearchBar />
-          <CategoryFilter />
         </section>
 
         <section>
@@ -90,7 +80,34 @@ export function MainLibraryView(): ReactElement {
         </section>
       </div>
 
-      <aside className="library-sidebar">
+      <aside className="library-sidebar" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        <section
+          style={{
+            backgroundColor: 'var(--bg-card)',
+            border: '1px solid var(--border-color)',
+            borderRadius: '14px',
+            padding: '1.15rem 1.25rem',
+            boxShadow: 'var(--shadow-xs)',
+          }}
+        >
+          <h2
+            style={{
+              fontSize: '1.05rem',
+              fontWeight: 700,
+              margin: '0 0 0.85rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              color: 'var(--text-primary)',
+              letterSpacing: '-0.01em',
+            }}
+          >
+            <span aria-hidden="true">🏷️</span>
+            <span>Thể loại sách</span>
+          </h2>
+          <CategoryFilter />
+        </section>
+
         <BorrowedList />
       </aside>
     </div>

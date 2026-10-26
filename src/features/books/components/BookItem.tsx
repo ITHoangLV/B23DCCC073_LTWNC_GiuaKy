@@ -70,6 +70,9 @@ export const BookItem = React.memo(function BookItem({
               alt=""
               aria-hidden="true"
               loading="lazy"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
               style={{
                 width: '100%',
                 height: '100%',
