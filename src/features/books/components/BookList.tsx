@@ -87,12 +87,7 @@ export function BookList(): ReactElement {
   return (
     <div
       data-testid="books-grid"
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
-        gap: '1.25rem',
-        marginTop: 0,
-      }}
+      className="books-grid"
     >
       {filteredBooks.map((book) => (
         <BookItem

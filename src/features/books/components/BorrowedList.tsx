@@ -26,6 +26,8 @@ export function BorrowedList(): ReactElement {
         borderColor: isFull ? 'var(--warning-color)' : 'var(--border-color)',
         borderRadius: '14px',
         padding: '1.25rem',
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)',
         boxShadow: 'var(--shadow-xs)',
         transition: 'border-color 0.3s ease, background 0.3s ease',
       }}

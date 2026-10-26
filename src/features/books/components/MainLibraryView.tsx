@@ -74,6 +74,8 @@ export function MainLibraryView(): ReactElement {
         <section
           style={{
             backgroundColor: 'var(--bg-card)',
+            backdropFilter: 'blur(8px)',
+            WebkitBackdropFilter: 'blur(8px)',
             border: '1px solid var(--border-color)',
             borderRadius: '14px',
             padding: '1.25rem',

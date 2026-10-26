@@ -43,7 +43,7 @@ export const BookItem = React.memo(function BookItem({
       style={{
         border: '1px solid var(--border-color)',
         borderRadius: '14px',
-        padding: '1.25rem 1.25rem 1.1rem',
+        padding: '1rem 1rem 0.9rem',
         backgroundColor: 'var(--bg-card)',
         display: 'flex',
         flexDirection: 'column',
@@ -58,10 +58,10 @@ export const BookItem = React.memo(function BookItem({
             style={{
               position: 'relative',
               width: '100%',
-              height: '160px',
+              height: '140px',
               borderRadius: '10px',
               overflow: 'hidden',
-              marginBottom: '0.85rem',
+              marginBottom: '0.75rem',
               backgroundColor: 'var(--accent-light)',
             }}
           >
@@ -119,9 +119,9 @@ export const BookItem = React.memo(function BookItem({
 
         <h3
           style={{
-            fontSize: '1.05rem',
+            fontSize: '0.98rem',
             margin: '0 0 0.4rem',
-            lineHeight: 1.45,
+            lineHeight: 1.4,
             fontWeight: 700,
             color: 'var(--text-primary)',
             letterSpacing: '-0.01em',
