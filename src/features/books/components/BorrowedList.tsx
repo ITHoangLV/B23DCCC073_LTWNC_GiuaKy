@@ -110,6 +110,22 @@ export function BorrowedList(): ReactElement {
                 transition: 'box-shadow 0.2s ease',
               }}
             >
+              {book.coverImage && (
+                <img
+                  src={book.coverImage}
+                  alt=""
+                  aria-hidden="true"
+                  style={{
+                    width: '38px',
+                    height: '52px',
+                    borderRadius: '6px',
+                    objectFit: 'cover',
+                    flexShrink: 0,
+                    border: '1px solid var(--border-color)',
+                  }}
+                />
+              )}
+
               <div style={{ overflow: 'hidden', flex: 1 }}>
                 <p
                   style={{

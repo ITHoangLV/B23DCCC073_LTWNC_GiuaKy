@@ -53,6 +53,34 @@ export const BookItem = React.memo(function BookItem({
       }}
     >
       <div>
+        {book.coverImage && (
+          <div
+            style={{
+              position: 'relative',
+              width: '100%',
+              height: '160px',
+              borderRadius: '10px',
+              overflow: 'hidden',
+              marginBottom: '0.85rem',
+              backgroundColor: 'var(--accent-light)',
+            }}
+          >
+            <img
+              src={book.coverImage}
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                filter: isOutOfStock ? 'grayscale(0.6) opacity(0.7)' : 'none',
+                transition: 'transform 0.3s ease, filter 0.3s ease',
+              }}
+            />
+          </div>
+        )}
+
         <div
           style={{
             display: 'flex',

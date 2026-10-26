@@ -8,6 +8,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'CNTT',
     year: 2023,
     available: 4,
+    coverImage: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-2',
@@ -16,6 +17,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'CNTT',
     year: 2008,
     available: 2,
+    coverImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-3',
@@ -24,6 +26,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'CNTT',
     year: 2021,
     available: 0,
+    coverImage: 'https://images.unsplash.com/photo-1516116211227-bbc04f1a6ea6?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-4',
@@ -32,6 +35,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'CNTT',
     year: 2024,
     available: 5,
+    coverImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-5',
@@ -40,6 +44,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'CNTT',
     year: 2022,
     available: 3,
+    coverImage: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-6',
@@ -48,6 +53,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'Kinh tế',
     year: 2020,
     available: 6,
+    coverImage: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-7',
@@ -56,6 +62,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'Kinh tế',
     year: 2019,
     available: 3,
+    coverImage: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-8',
@@ -64,6 +71,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'Kinh tế',
     year: 2021,
     available: 0,
+    coverImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-9',
@@ -72,6 +80,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'Kinh tế',
     year: 2018,
     available: 2,
+    coverImage: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-10',
@@ -80,6 +89,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'Kinh tế',
     year: 2022,
     available: 4,
+    coverImage: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-11',
@@ -88,6 +98,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'Ngoại ngữ',
     year: 2019,
     available: 8,
+    coverImage: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-12',
@@ -96,6 +107,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'Ngoại ngữ',
     year: 2023,
     available: 3,
+    coverImage: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-13',
@@ -104,6 +116,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'Ngoại ngữ',
     year: 2022,
     available: 1,
+    coverImage: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-14',
@@ -112,6 +125,7 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'Ngoại ngữ',
     year: 2024,
     available: 5,
+    coverImage: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=500&auto=format&fit=crop&q=80',
   },
   {
     id: 'book-15',
@@ -120,5 +134,6 @@ export const MOCK_BOOKS: readonly Book[] = [
     category: 'Ngoại ngữ',
     year: 2021,
     available: 2,
+    coverImage: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=500&auto=format&fit=crop&q=80',
   },
 ];
