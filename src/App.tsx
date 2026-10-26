@@ -64,37 +64,19 @@ export function App(): ReactElement {
                 lineHeight: 1.2,
               }}
             >
-              <span
+              <img
+                src="/logo.jpg"
+                alt="Logo Thư viện sách"
                 style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  width: '2.3rem',
-                  height: '2.3rem',
-                  borderRadius: '11px',
-                  background: 'var(--accent-color)',
-                  color: 'var(--bg-primary)',
-                  boxShadow: 'var(--shadow-accent)',
+                  width: '2.5rem',
+                  height: '2.5rem',
+                  borderRadius: '10px',
+                  objectFit: 'cover',
+                  boxShadow: 'var(--shadow-sm)',
                   flexShrink: 0,
+                  border: '1px solid var(--border-color)',
                 }}
-                aria-hidden="true"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-                  <path d="M8 7h8" />
-                  <path d="M8 11h5" />
-                </svg>
-              </span>
+              />
               <span className="gradient-text">Thư viện sách</span>
             </h1>
           </Link>
