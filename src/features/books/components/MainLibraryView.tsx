@@ -70,23 +70,13 @@ export function MainLibraryView(): ReactElement {
 
   return (
     <div className="library-layout">
-      <div className="library-main">
-        <section style={{ marginBottom: '1.25rem' }}>
-          <SearchBar />
-        </section>
-
-        <section>
-          <BookList />
-        </section>
-      </div>
-
-      <aside className="library-sidebar" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+      <aside className="library-sidebar-left">
         <section
           style={{
             backgroundColor: 'var(--bg-card)',
             border: '1px solid var(--border-color)',
             borderRadius: '14px',
-            padding: '1.15rem 1.25rem',
+            padding: '1.25rem',
             boxShadow: 'var(--shadow-xs)',
           }}
         >
@@ -107,7 +97,19 @@ export function MainLibraryView(): ReactElement {
           </h2>
           <CategoryFilter />
         </section>
+      </aside>
 
+      <div className="library-main">
+        <section style={{ marginBottom: '1.25rem' }}>
+          <SearchBar />
+        </section>
+
+        <section>
+          <BookList />
+        </section>
+      </div>
+
+      <aside className="library-sidebar-right">
         <BorrowedList />
       </aside>
     </div>
