@@ -26,7 +26,6 @@ export function BorrowedList(): ReactElement {
         borderColor: isFull ? 'var(--warning-color)' : 'var(--border-color)',
         borderRadius: '14px',
         padding: '1.25rem',
-        marginBottom: '2rem',
         boxShadow: 'var(--shadow-xs)',
         transition: 'border-color 0.3s ease, background 0.3s ease',
       }}
@@ -90,8 +89,8 @@ export function BorrowedList(): ReactElement {
       ) : (
         <div
           style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
+            display: 'flex',
+            flexDirection: 'column',
             gap: '0.625rem',
           }}
         >

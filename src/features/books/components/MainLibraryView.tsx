@@ -69,27 +69,31 @@ export function MainLibraryView(): ReactElement {
   }
 
   return (
-    <>
-      <BorrowedList />
+    <div className="library-layout">
+      <div className="library-main">
+        <section
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '1rem',
+            marginBottom: '1.25rem',
+          }}
+        >
+          <SearchBar />
+          <CategoryFilter />
+        </section>
 
-      <section
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '1rem',
-          marginBottom: '1rem',
-        }}
-      >
-        <SearchBar />
-        <CategoryFilter />
-      </section>
+        <section>
+          <BookList />
+        </section>
+      </div>
 
-      <section>
-        <BookList />
-      </section>
-    </>
+      <aside className="library-sidebar">
+        <BorrowedList />
+      </aside>
+    </div>
   );
 }
 

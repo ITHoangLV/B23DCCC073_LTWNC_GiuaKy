@@ -69,19 +69,33 @@ export function App(): ReactElement {
                   display: 'inline-flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  width: '2.2rem',
-                  height: '2.2rem',
-                  borderRadius: '10px',
-                  background: 'var(--gradient-brand)',
-                  fontSize: '1.15rem',
+                  width: '2.3rem',
+                  height: '2.3rem',
+                  borderRadius: '11px',
+                  background: 'var(--accent-color)',
+                  color: 'var(--bg-primary)',
                   boxShadow: 'var(--shadow-accent)',
                   flexShrink: 0,
                 }}
                 aria-hidden="true"
               >
-                📚
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                  <path d="M8 7h8" />
+                  <path d="M8 11h5" />
+                </svg>
               </span>
-              <span className="gradient-text">Mini Library</span>
+              <span className="gradient-text">Thư viện sách</span>
             </h1>
           </Link>
           <p
@@ -104,11 +118,11 @@ export function App(): ReactElement {
               padding: '0.5rem 1.1rem',
               borderRadius: '10px',
               background: !isStatsPage
-                ? 'var(--gradient-brand)'
+                ? 'var(--accent-color)'
                 : 'var(--bg-card)',
               border: '1px solid',
               borderColor: !isStatsPage ? 'transparent' : 'var(--border-color)',
-              color: !isStatsPage ? '#ffffff' : 'var(--text-primary)',
+              color: !isStatsPage ? 'var(--bg-primary)' : 'var(--text-primary)',
               textDecoration: 'none',
               fontWeight: 600,
               fontSize: '0.875rem',
@@ -130,11 +144,11 @@ export function App(): ReactElement {
               padding: '0.5rem 1.1rem',
               borderRadius: '10px',
               background: isStatsPage
-                ? 'var(--gradient-brand)'
+                ? 'var(--accent-color)'
                 : 'var(--bg-card)',
               border: '1px solid',
               borderColor: isStatsPage ? 'transparent' : 'var(--border-color)',
-              color: isStatsPage ? '#ffffff' : 'var(--text-primary)',
+              color: isStatsPage ? 'var(--bg-primary)' : 'var(--text-primary)',
               textDecoration: 'none',
               fontWeight: 600,
               fontSize: '0.875rem',

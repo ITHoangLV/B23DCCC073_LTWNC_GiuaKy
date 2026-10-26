@@ -1,103 +1,101 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 :root {
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  --bg-primary:   #f0f4ff;
+  --bg-primary:   #f6f1e8;
   --bg-secondary: #ffffff;
   --bg-card:      #ffffff;
-  --bg-input:     #ffffff;
-  --bg-glass:     rgba(255, 255, 255, 0.7);
+  --bg-input:     #fffdfa;
+  --bg-glass:     rgba(255, 255, 255, 0.85);
 
-  --text-primary:   #0d1b2a;
-  --text-secondary: #5a6a7e;
-  --text-muted:     #94a3b8;
+  --text-primary:   #181513;
+  --text-secondary: #695f54;
+  --text-muted:     #9e9488;
 
-  --border-color:      #dde3ee;
-  --border-color-focus: #2563eb;
+  --border-color:       #e5dcd0;
+  --border-color-focus: #181513;
 
-  --accent-color:  #2563eb;
-  --accent-light:  #eff6ff;
-  --accent-hover:  #1d4ed8;
+  --accent-color:  #181513;
+  --accent-light:  #ede5d8;
+  --accent-hover:  #332d27;
 
-  --success-color: #16a34a;
-  --success-light: #f0fdf4;
-  --warning-color: #d97706;
-  --warning-light: #fffbeb;
-  --danger-color:  #dc2626;
-  --danger-bg:     #fef2f2;
+  --success-color: #2d6a4f;
+  --success-light: #f0f7f4;
+  --warning-color: #9a5528;
+  --warning-light: #faf0e6;
+  --danger-color:  #a93226;
+  --danger-bg:     #fcf2f1;
 
-  --cntt-color:   #6366f1;   
-  --cntt-light:   #eef2ff;
-  --kinhte-color: #0891b2;   
-  --kinhte-light: #ecfeff;
-  --ngoaingu-color: #7c3aed; 
-  --ngoaingu-light: #f5f3ff;
+  --cntt-color:     #3a4f66;
+  --cntt-light:     #f0f4f8;
+  --kinhte-color:   #7d5a36;
+  --kinhte-light:   #f9f4ee;
+  --ngoaingu-color: #66495b;
+  --ngoaingu-light: #f7f1f5;
 
-  --badge-bg:   #eff6ff;
-  --badge-text: #1d4ed8;
+  --badge-bg:   #ede5d8;
+  --badge-text: #181513;
 
-  --btn-disabled-bg:   #e2e8f0;
-  --btn-disabled-text: #94a3b8;
+  --btn-disabled-bg:   #e5dcd0;
+  --btn-disabled-text: #9e9488;
 
-  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.04);
-  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.07), 0 1px 2px -1px rgb(0 0 0 / 0.04);
-  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.10), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-  --shadow-lg: 0 10px 24px -4px rgb(0 0 0 / 0.12), 0 4px 8px -4px rgb(0 0 0 / 0.06);
-  --shadow-accent: 0 4px 14px 0 rgb(37 99 235 / 0.25);
+  --shadow-xs: 0 1px 2px 0 rgb(24 21 19 / 0.05);
+  --shadow-sm: 0 2px 4px 0 rgb(24 21 19 / 0.07);
+  --shadow-md: 0 6px 18px -2px rgb(24 21 19 / 0.10);
+  --shadow-lg: 0 12px 28px -4px rgb(24 21 19 / 0.14);
+  --shadow-accent: 0 4px 14px 0 rgb(24 21 19 / 0.22);
 
-  --gradient-hero:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-brand: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-  --gradient-card:  linear-gradient(145deg, #ffffff 0%, #f8faff 100%);
+  --gradient-brand: linear-gradient(135deg, #181513 0%, #3e3328 100%);
+  --gradient-card:  linear-gradient(145deg, #ffffff 0%, #faf6ee 100%);
 }
 
 [data-theme='dark'] {
-  --bg-primary:   #0b1120;
-  --bg-secondary: #111827;
-  --bg-card:      #1a2236;
-  --bg-input:     #111827;
-  --bg-glass:     rgba(26, 34, 54, 0.85);
+  --bg-primary:   #121110;
+  --bg-secondary: #1a1816;
+  --bg-card:      #22201d;
+  --bg-input:     #191715;
+  --bg-glass:     rgba(34, 32, 29, 0.85);
 
-  --text-primary:   #f1f5f9;
-  --text-secondary: #8ea4c8;
-  --text-muted:     #4b6186;
+  --text-primary:   #f5ede0;
+  --text-secondary: #c5baa8;
+  --text-muted:     #7a7063;
 
-  --border-color:       #263450;
-  --border-color-focus: #3b82f6;
+  --border-color:       #332f2a;
+  --border-color-focus: #d6c5a5;
 
-  --accent-color:  #3b82f6;
-  --accent-light:  #172036;
-  --accent-hover:  #60a5fa;
+  --accent-color:  #d6c5a5;
+  --accent-light:  #2c2822;
+  --accent-hover:  #e8dcbe;
 
-  --success-color: #22c55e;
-  --success-light: #052e16;
-  --warning-color: #f59e0b;
-  --warning-light: #1c1408;
-  --danger-color:  #f87171;
-  --danger-bg:     #2d0f0f;
+  --success-color: #52b788;
+  --success-light: #14291f;
+  --warning-color: #d48c46;
+  --warning-light: #2d1c10;
+  --danger-color:  #e76f51;
+  --danger-bg:     #2b1411;
 
-  --cntt-color:     #818cf8;
-  --cntt-light:     #1e1b4b33;
-  --kinhte-color:   #22d3ee;
-  --kinhte-light:   #0c3041;
-  --ngoaingu-color: #a78bfa;
-  --ngoaingu-light: #2e1e4b;
+  --cntt-color:     #94a3b8;
+  --cntt-light:     #1e2530;
+  --kinhte-color:   #d4a373;
+  --kinhte-light:   #2d2217;
+  --ngoaingu-color: #c49eb8;
+  --ngoaingu-light: #2b1e28;
 
-  --badge-bg:   #172554;
-  --badge-text: #93c5fd;
+  --badge-bg:   #2e2922;
+  --badge-text: #e8dcbe;
 
-  --btn-disabled-bg:   #263450;
-  --btn-disabled-text: #4b6186;
+  --btn-disabled-bg:   #2c2822;
+  --btn-disabled-text: #6b6357;
 
-  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.3);
-  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.4);
-  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.5);
-  --shadow-lg: 0 10px 24px -4px rgb(0 0 0 / 0.6);
-  --shadow-accent: 0 4px 14px 0 rgb(59 130 246 / 0.3);
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  --shadow-sm: 0 2px 6px 0 rgb(0 0 0 / 0.5);
+  --shadow-md: 0 6px 18px -2px rgb(0 0 0 / 0.6);
+  --shadow-lg: 0 14px 32px -4px rgb(0 0 0 / 0.7);
+  --shadow-accent: 0 4px 14px 0 rgb(214 197 165 / 0.25);
 
-  --gradient-card: linear-gradient(145deg, #1a2236 0%, #131c2f 100%);
+  --gradient-brand: linear-gradient(135deg, #f5ede0 0%, #c9b794 100%);
+  --gradient-card:  linear-gradient(145deg, #22201d 0%, #181614 100%);
 }
 
 *,
@@ -135,9 +133,37 @@ body {
 ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
 
 .app-container {
-  max-width: 1140px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 1.75rem 1.25rem 4rem;
+}
+
+.library-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 1.75rem;
+  align-items: start;
+}
+
+.library-main {
+  min-width: 0;
+}
+
+.library-sidebar {
+  position: sticky;
+  top: 1.25rem;
+  min-width: 0;
+}
+
+@media (max-width: 980px) {
+  .library-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .library-sidebar {
+    position: static;
+    order: -1;
+  }
 }
 
 .book-card {
@@ -176,9 +202,9 @@ body {
   border-top: 3px solid var(--ngoaingu-color) !important;
 }
 
-.book-card[data-category='CNTT']:hover       { border-color: var(--cntt-color) !important; box-shadow: 0 8px 24px -4px rgb(99 102 241 / 0.25); }
-.book-card[data-category='Kinh tế']:hover    { border-color: var(--kinhte-color) !important; box-shadow: 0 8px 24px -4px rgb(8 145 178 / 0.25); }
-.book-card[data-category='Ngoại ngữ']:hover  { border-color: var(--ngoaingu-color) !important; box-shadow: 0 8px 24px -4px rgb(124 58 237 / 0.25); }
+.book-card[data-category='CNTT']:hover      { border-color: var(--cntt-color) !important; }
+.book-card[data-category='Kinh tế']:hover   { border-color: var(--kinhte-color) !important; }
+.book-card[data-category='Ngoại ngữ']:hover { border-color: var(--ngoaingu-color) !important; }
 
 .badge-cntt {
   background-color: var(--cntt-light) !important;
@@ -210,21 +236,21 @@ body {
 .btn:active:not(:disabled) { transform: translateY(1px); }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
-  color: #ffffff;
+  background: var(--accent-color);
+  color: var(--bg-primary);
 }
 .btn-primary:not(:disabled):hover {
+  background: var(--accent-hover);
   box-shadow: var(--shadow-accent);
-  filter: brightness(1.08);
 }
 
 .btn-warning {
-  background: linear-gradient(135deg, var(--warning-color), #b45309);
+  background: var(--warning-color);
   color: #ffffff;
 }
 .btn-warning:hover {
-  box-shadow: 0 4px 14px 0 rgb(217 119 6 / 0.35);
-  filter: brightness(1.08);
+  filter: brightness(1.1);
+  box-shadow: 0 4px 14px 0 rgb(154 85 40 / 0.35);
 }
 
 .spinner {
@@ -244,8 +270,13 @@ body {
 input[type='search']:focus,
 input[type='text']:focus {
   border-color: var(--border-color-focus) !important;
-  box-shadow: 0 0 0 3px rgb(37 99 235 / 0.12) !important;
+  box-shadow: 0 0 0 3px rgb(24 21 19 / 0.12) !important;
   outline: none;
+}
+
+[data-theme='dark'] input[type='search']:focus,
+[data-theme='dark'] input[type='text']:focus {
+  box-shadow: 0 0 0 3px rgb(214 197 165 / 0.18) !important;
 }
 
 .gradient-text {

@@ -45,9 +45,9 @@ export function CategoryFilter(): ReactElement {
               border: '1px solid',
               borderColor: isSelected ? 'transparent' : 'var(--border-color)',
               background: isSelected
-                ? 'var(--gradient-brand)'
+                ? 'var(--accent-color)'
                 : 'var(--bg-card)',
-              color: isSelected ? '#ffffff' : 'var(--text-primary)',
+              color: isSelected ? 'var(--bg-primary)' : 'var(--text-primary)',
               fontWeight: isSelected ? 700 : 500,
               fontSize: '0.85rem',
               cursor: 'pointer',

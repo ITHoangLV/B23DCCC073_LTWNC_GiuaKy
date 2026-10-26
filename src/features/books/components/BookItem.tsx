@@ -173,10 +173,8 @@ export const BookItem = React.memo(function BookItem({
               padding: '0.65rem',
               fontSize: '0.875rem',
               borderRadius: '9px',
-              background: isOutOfStock
-                ? 'var(--btn-disabled-bg)'
-                : undefined, /* gradient từ .btn-primary */
-              color: isOutOfStock ? 'var(--btn-disabled-text)' : '#ffffff',
+              background: isOutOfStock ? 'var(--btn-disabled-bg)' : undefined,
+              color: isOutOfStock ? 'var(--btn-disabled-text)' : undefined,
               cursor: isOutOfStock ? 'not-allowed' : 'pointer',
               opacity: isOutOfStock ? 0.65 : 1,
             }}
